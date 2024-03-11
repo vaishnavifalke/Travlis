@@ -1,0 +1,54 @@
+<div class="container">
+    <h2 class="text-center">VendorService Form</h2>
+    <form>
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="VendorId">VendorId:</label>
+                    <input type="text"[(ngModel)]="vendorservice.VendorId" class="form-control" name="VendorId" placeholder="Enter VendorId" required>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="ServiceId">ServiceId:</label>
+                        <input type="text"[(ngModel)]="vendorservice.ServiceId" class="form-control" name="ServiceId" placeholder="Enter ServiceId" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="DestinationId">DestinationId:</label>
+                            <input type="text"[(ngModel)]="vendorservice.DestinationId" class="form-control" name="DestinationId" placeholder="Enter DestinationId" required>
+                        </div>
+    
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="ServiceCost">ServiceCost:</label>
+                        <input type="text"[(ngModel)]="vendorservice.ServiceCost" class="form-control" name="ServiceCost" placeholder="Enter ServiceCost" required>
+                    </div>
+
+
+
+                <div class="form-group">
+                    <label for="Status">Status:</label>
+                    <input type="text"[(ngModel)]="vendorservice.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                </div>
+            </div>
+          
+           
+        </div>
+
+        
+     
+       
+        
+
+        
+
+        <button  type="submit" (click)="OnSubmit()"class="btn btn-primary">Submit</button>
+    
+</div>
+
+
+

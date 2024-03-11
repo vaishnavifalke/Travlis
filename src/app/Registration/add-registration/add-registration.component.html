@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="image-container">
+      <!-- Add your image here -->
+      <img src="..\assets\Rectangle 26.png">
+    </div>
+  
+    <div class="form-container">
+      <form action="/submit_registration" method="post">
+        <h1>Welcome</h1>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
+        <label for="contact_number1">Contact Number:</label><br>
+        <input type="tel" id="contact_number1" name="contact_number1" placeholder="123-456-7890" required><br>
+        
+        <label for="email1">Email Id:</label><br>
+        <input type="email" id="email1" name="email1" required placeholder="Email Address"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required placeholder="Enter Password"><br>
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm Password"><br><br>
+        <div class="Register">
+          
+          <div class="register">
+            <p><a href="LoginComponent"button  type="submit"(click)="OnSubmit()" class="btn btn-primary">Register</a></p>
+            <!-- <button  type="submit"(click)="OnSubmit()" class="btn btn-danger pull-right">Sign up</button>
+            <div class="clearfix"></div>  -->
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,53 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">VendorService List</h4>
+                        <p class="card-category"> View Here All VendorService Table Record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>VendorServiceId </th>
+                                    <th>VendorId </th>
+                                    <th>DestinationId </th>
+                                    <th>ServiceId </th>
+                                    <th>ServiceCost </th>
+                                    <th>Status </th>
+                                    <th>Action </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of VendorServiceList">
+                                        <td>{{i.VendorServiceId}}</td>
+                                        <td>{{i.VendorId}}</td>
+                                        <td>{{i.DestinationId}}</td>
+                                        <td>{{i.ServiceId}}</td>
+                                        <td>{{i.ServiceCost}}</td>
+                                        <td>{{i.Status}}</td>
+                                        <td>{{i.Action}}</td>
+                                    
+                                        <!-- <td>{{i.Sectiontwo}}</td> -->
+                                      <!--   <td> <img src="{{i.Photo}}" style="height: 80px;width: 80px;"></td>  -->
+                                      <td><i class="fa fa-pencil-square iconaction"(click)="Edit(i.VendorServiceId)"  aria-hidden="true"></i>
+                                             <i class="fa fa-eye iconaction" (click)="View(i.VendorServiceId)" aria-hidden="true"></i>
+                                              <i class="fa fa-trash iconaction"(click)="Delete(i.VendorServiceId)" aria-hidden="true"></i>
+                                        </td> 
+                                    </tr>    
+                                                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+  </div>
+
+
+
+

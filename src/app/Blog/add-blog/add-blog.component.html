@@ -1,0 +1,55 @@
+<div class="container">
+    <h2 class="text-center">Blog Form </h2>
+    <form>
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Title">Title:</label>
+                    <input type="text"[(ngModel)]="blog.Title" class="form-control" name="Title" placeholder="Enter Title" required>
+                </div>
+            </div>
+          
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Subtitle">Subtitle:</label>
+                    <input type="text" [(ngModel)]="blog.SubTitle" class="form-control" name="Subtitle" placeholder="Enter Subtitle" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Description">Description:</label>
+                    <input type="text"[(ngModel)]="blog.Description" class="form-control" name="Description" placeholder="Enter Description" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Content">Content:</label>
+                    <input type="text" [(ngModel)]="blog.Content" class="form-control" name="Content" placeholder="Enter Content" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="Status">Status:</label>
+          <input type="text"[(ngModel)]="blog.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+      </div>
+      <div class="col-md-6">
+       
+      <label for="avatar">Upload Image: </label>
+      <input type="file" id="avatar"  name="Photo"  [(ngModel)]="blog.Photo"  (change)="fileChangeEvent($event)" #PhotoControl="ngModel"accept="image/png, image/jpeg" required>
+     
+     </div>
+     
+       
+        
+
+        
+
+        <button  type="submit" (click)="OnSubmit()"class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+

@@ -1,0 +1,45 @@
+<div class="row marginlittle">
+    <div class="col-md-12 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Vendor</h4>
+                <p class="card-category">Update new Vendor here</p>
+            </div>
+            <div class="card-body">
+                <form #vendorForm="ngForm">
+                  <div class="row">
+                    <div class="col-md-12">
+                         <input type="text" placeholder="Name" [(ngModel)]="vendor.Name"name="Name"  #TitleControl="ngModel" type="text"required>
+                    </div>
+                    <div class="col-md-12">
+                         <input type="text" placeholder="Sub Title" [(ngModel)]="vendor.SubTitle"name="SubTitle" #TitleControl="ngModel" type="text"required>
+                    </div>
+                        <div class="col-md-12">
+                    <textarea type="text" placeholder="Description" [(ngModel)]="vendor.Description"name="Description"  #TitleControl="ngModel" type="text"required></textarea>
+                    </div>
+                        <div class="col-md-4">
+                
+                  <textarea type="text" placeholder="Status" [(ngModel)]="vendor.Status" #TitleControl="ngModel"name="Status" type="text"required></textarea>
+                
+            </div>
+            
+                <div class="col-md-12">
+                  
+                    <label for="avatar">Upload Image </label>
+                    <input type="file" id="avatar" name="Photo"[(ngModel)]="vendor.Photo"  (change)="fileChangeEvent($event)" #PhotoControl="ngModel" accept="image/png, image/jpeg" >         
+                </div>
+                
+                  
+                    
+                  </div>
+                  
+                  
+                
+                    <button mat-raised-button type="submit" [disabled]="vendorForm.invalid"class="btn btn-danger pull-right"(click)="OnSubmit()">update</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+

@@ -1,0 +1,68 @@
+<div class="row marginlittle">
+    <div class="col-md-12 topform">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">VendorService</h4>
+                <p class="card-category">Update VendorService Here</p>
+            </div>
+            <div class="card-body">
+                <form #blogForm="ngForm">
+
+
+                  <div class="col-md-12">
+                   
+                    <label for="VendorId">VendorId:</label>
+                    <input type="text"[(ngModel)]="vendorService.VendorId" class="form-control" name="VendorId" placeholder="Enter VendorId" required>
+                    
+                  </div>
+                  
+
+                  <div class="col-md-12">
+                   
+                    <label for="DestinationId">Status:</label>
+                    <input type="text"[(ngModel)]="vendorService.DestinationId" class="form-control" name="DestinationId" placeholder="Enter DestinationId" required>
+                    
+                  </div>
+                  
+
+                  <div class="col-md-12">
+                   
+                    <label for="Status">Status:</label>
+                    <input type="text"[(ngModel)]="vendorService.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="ServiceCost">ServiceCost:</label>
+                      <input type="text"[(ngModel)]="vendorService.ServiceCost" class="form-control" name="ServiceCost" placeholder="Enter ServiceCost" required>
+                      
+                  </div>
+                  
+
+                  <div class="col-md-12">
+                   
+                    <label for="Status">Status:</label>
+                    <input type="text"[(ngModel)]="vendorService.Status" class="form-control" name="Status" placeholder="Enter Status" required>
+                    
+                  </div>
+                  
+                
+                  
+            
+               
+                
+                  </div>
+                  
+                  
+                
+                    <button mat-raised-button type="submit" [disabled]="blogForm.invalid"class="btn btn-danger pull-right"(click)="OnSubmit()">update</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
